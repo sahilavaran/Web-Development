@@ -1,0 +1,329 @@
+body{
+    background-color: slategray;
+    /* background-image: url(images/painting-mountain-lake-with-mountain-background_188544-9126.avif); */
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+
+#p1{
+    color: red;
+}
+
+.odd{
+    color: tomato;
+}
+
+.even{
+    color: blue;
+}
+
+
+/* use color picker from google, just by typing color picker or use the colorzilla */
+
+/* below we can check font {unit of measurments are 16px like that and 1em these 2 are the measurements */
+    /* we can even check the fonts in the google its free to use{ Google fonts} */
+#hfont{
+    font-family: roboto;
+    font-size: 27px;
+}
+
+#SAT{
+    font-family: 'Lucida Sans';
+}
+
+/* borders in html */
+
+#border{
+    border-style: double;
+    border-width: 2px;
+    border-color: aquamarine;
+    border-radius: 5px;
+}
+/* #border_try{
+   border-style: dashed;
+   border-color: black;
+    border-radius: 10px;
+} */
+
+/* there is another way to do it i will write down beloew and make it comment */
+/* #border_try{
+    border: 2px solid color(srgb red green blue);
+} */
+
+#border_try{
+    border-bottom: 3px solid red;
+    border-top: 3px solid yellow;
+    border-left: 3px dotted orange;
+    border-right: 3px dotted green;
+    border-radius: 5px;
+}
+
+
+/* Lets try shadow for html text */
+#text_shadow{
+    text-shadow: 3px 1px;
+    color: yellowgreen;
+}
+
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    box-shadow: 3px 3px 5px;
+}
+
+/* in the shadow last one is box shadow for some reason not working needds more try */
+
+/* now lets try the margin */
+body{
+    margin: 0pxs;
+    border: 3px solid;
+    display: flow-root;  /*idh evde use cheyyumpo borderil kollathadh okke kollum*/
+}
+
+.boxx{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    margin-left: 100px;   
+}
+/* #boxxz{
+background-color: blueviolet;
+margin-top: 50px;jj
+} */
+
+/* margin auto koduthal centeril nilkum, margin-right auto koduthal leftil thanne nilkum because its already in the left/ */
+
+/* now lets learn FLOAT */
+#float_test{
+    float: left;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+#float_test2{
+    float: right;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+
+/* OVERFLOW lets try */
+
+#overflow_try{
+border: 2px solid;
+height: 75px;
+overflow: auto;             /*try all the overflow thats in the html file*/
+
+}
+
+/* DISPLAY  {display block koduthal six=ze mattan pattadhinte size mattan kayyum for exaomple imageinte, (a) linkinte, spaninte okke }  adhu polea thannea full space adukum adil oru text indakil adh adhinte koode varula adh thazhe vera thanne varollu block kodutal*/
+
+/* display-inline koduthal njammak text adhinte sidil continue cheyyan kayyum/ ithil height and width onnum change cheyyan kayyula  */
+/* display inline block = idh parnja same ann almost but njammak at the same time height and width adjust cheyyam */
+
+#display_try{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+#display_try2{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: inline;              
+}
+
+/* WIDTH AND HEIGHT */
+
+.try_width_height{
+    background-color: aliceblue;
+    padding: 25px;
+    border: 2px solid;
+    box-sizing: border-box;   /*ee property use cheyydha box endhaka vannalum 2 side aaki adjust cheyyddhu tharum*/
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+    min-height: 50%;
+}
+
+.CONTAINER{
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+/* BACKGROUND IMAGE */
+/* this is done in different section */
+
+#CONTAINER5{
+    border: 2PX solid;
+}
+
+/* BELOW WE ARE CHECKING COMBINATORS */
+
+#CONTAINER5 P{            /* THIS ONE HERE descendant combinators which is a space to add changes in the family*/
+    background-color: black;
+}
+
+#CONTAINER5 > p{
+    background-color: beige;  /*evde direct children varunnadh mathram aavollu adh ann children combinators mugalil grandchildrenum aayi evde angaene aavula*/
+}
+
+#CONTAINER5 ~ p{
+    background-color: orange;  /*general aayi adhangilum varunna sibling indavulea adhann for example idh divil onnualla complete purath ann but in a same family angane paryam/ vera rithil paryannagil bodynte ullil ulla teams but not in any div okke paryam*/
+}
+
+#CONTAINER5 + p{
+    background-color: brown; /* idh annu paryunadh outdide of the family like not in any div and the fisrt one after that we can call as next too*/
+}
+
+/* SUDO CLASS */
+/* idh evde press cheyyumpollum okke varunna mattangal ann or hover, visited anagne okkke */
+a:link{
+    color: green;
+}
+
+a:hover{
+    color: brown;
+    font-size: 5.10em;
+}
+a:active{
+    color: bisque;
+    font-size: 2.1em;
+}
+
+a:visited{
+    color: pink;
+    font-size: 2.2em;
+}
+
+li:hover{
+    background-color: yellow;
+}
+
+/* there is alsi not sudo class too that means njammal ipo sude class use cheyyatha timil endhu aayi irikanam aa sabavam */
+/* lets try below */
+
+li:not(:hover){
+    background-color: grey;
+}
+
+/*  Next is (nth-child() sudo class */
+li:nth-child(2){           /*njammal adha kodukunadh adhu polea kittan ann i mean we can select from the list*/  
+    background-color: blue;
+}
+
+#greetings p{
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+#greetings:hover p{     /*evde endha sabavikunadh vecha display propery hover aavumpo mathram hello verithikan*/
+    display: block;
+}
+
+/* psuedo elements */
+
+h1::first-letter{
+    font-size: 2em;
+    font-style: italic;
+}
+
+P::first-line{
+    background-color: yellow;
+}
+p::selection{
+    color: white;
+    background-color: grey;
+}
+
+fruitz li ::before{
+    content: "✔️";
+}
+#APPLES::after{
+    content: 🍎;
+}
+
+#ORANGES::after{
+    content: 🍎;
+}
+
+#BANANAS::after{
+    content: 🍎;
+}
+
+/* PAGINATION BELOW */
+.pagination{
+    text-align: center;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a .actives{
+    background-color: green;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.actives){
+    background-color: grey;
+}
+
+/* DROPDOWN MENU BELOW */
+.dropdown button{
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    curser:pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .contents{
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    min-width: 100px;
+    box-shadow 2px;
+}
+
+.dropdown:hover .contents{
+    display: block;
+}
+.dropdown:hover button{
+    background-color: brown;
+}
+
+.dropdown a:hover{
+    background-color: green;
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+     /* navbar */
+ .navh1{
+    text-align: center;
+ }    
