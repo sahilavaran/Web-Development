@@ -107,7 +107,7 @@
 
 // (below is the EASY WAY)
 // let username;
-// username = window.prompt("whats your user name");
+// username = window.prompt("whats your user name");            
 
 // console.log(username);
 
@@ -163,4 +163,129 @@
 //     document.getElementById("myH3").textContent = circumference;
 // }
 
-/////////////////////////////////////////////
+//////////////////////////////////////////////////
+
+// Math = built-in object that provides a collection of properties and methods.
+
+// let x = 3.21;
+// let y = 2;
+// let z;
+
+// // z = Math.round(x);
+// // z = Math.floor(x);   (floor always rounds down)
+//  // z = Math.ceil(x);   (rounds to the higher number)
+// //  z = math.trunc(x);  (idh decimals okke opyivakkum)
+// // z = math.abs(x); (to find the absalute number)
+
+// // let  max = math.max(x,y,z); (to find the maximum)
+// let min = math.min(x,y,z);
+// console.log(min);
+
+// /////////////////////////////////////////////
+
+// RANDOM NUMBER GENERATOR
+
+
+// const max = 100;
+// const min =50;
+
+// let randomNum = Math.floor(Math.random() *(max - min)) + min;
+// console.log(randomNum);
+
+// //////////////////////////////////////////
+
+//IF STATEMENTS = if a condition is true, execute some code if not,  so semthing else
+
+// let age =13;
+
+// if(age >= 18){
+//     console.log("You are old enough to enter this place")
+// }
+// else{
+//     console.log("you must be 18+ to enter the place")
+    
+// }
+
+// ///
+
+// let time =14;
+// if(time < 12){
+//     console.log("goodmorning")
+// }
+// else{
+//     console.log("good afternoon")
+// }
+
+// ///
+
+// let isStudent = false;
+
+// if(isStudent){
+//     console.log("you are a student")
+// }
+// else{
+//     console.log("you are not a student")
+// }
+
+////NESTED IF STATEMENTS
+
+// let ages =25;
+// let hasLicence = false;
+
+// if(ages >= 16){
+// console.log("you are old enough to drive")
+// if(hasLicence){
+//     console.log("You have licence")
+// }
+// else{
+//     console.log("you dont have a license yet")
+// }
+// }
+// else{
+//     console.log("you are not old enough to drive")
+// }
+
+///
+//ELSE IF STATEMNETS
+// const myText = document.getElementById("myText");
+// const mySubmit = document.getElementById("mySubmit");
+// const resultElement =document.getElementById("resultElement");
+
+// mySubmit.onclick = function(){
+//     let age ;
+//     age = myText.value;
+
+//     age = Number(age);
+//     if(age >= 100){
+//         console.log("you are too old to enter")
+//         resultElement.textContent = `you are too old to enter`
+//     }
+//     else if(age>=18){
+//         console.log("you are old enough to enter");
+//         resultElement.textContent = `you are old enough to enter`
+//     }
+//     else if(age == 0){
+//         console.log("you cant enter yiu are just born");
+//         resultElement.textContent =`you cant enter yiu are just born`
+//     }
+//     else if(age < 0){
+//         console.log("your age cant be below zero");
+//         resultElement.textContent = `your age cant be below zero`
+//     }
+//     if(age >= 100){
+//         console.log("you are too old to enter");
+//         resultElement.textContent = `you are too old to enter`
+//     }
+//     else{
+//         console.log("you are not old enough to enter "); 
+//         resultElement.textContent = `you are not old enough to enter`
+//     }
+    
+// }
+
+
+
+
+
+
+
