@@ -283,6 +283,12 @@
     
 // }
 
+// //////////////////////////////////////////////////////////////////
+
+//  .checked = property that determines the checked sate of an 
+            //   HTML checkbox or radio button element.
+
+            
 
 
 
